@@ -1,0 +1,11 @@
+.product-image{
+    width: 100px;
+}
+th{
+    border: 1px solid;
+    padding: 0.6em;
+}
+td{
+    border: 1px solid;
+    padding: 0.6em;
+}
