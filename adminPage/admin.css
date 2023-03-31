@@ -9,3 +9,56 @@ td{
     border: 1px solid;
     padding: 0.6em;
 }
+#filter-sort{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#filter-sort>select{
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 0.2em;
+}
+#admin-product-container{
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+#table{
+    width: 60%;
+    /* border: 2px solid red; */
+    /* position: fixed;
+    top: 0; */
+}
+table{
+    border-collapse: collapse;
+    font-size: 20px;
+    background-color: aliceblue;
+}
+thead{
+    background-color: #E91E63;
+    color: white;
+}
+#formData-div{
+    width: 40%;
+    /* display: none; */
+}
+
+#formData{
+    position: sticky;
+    top: 80px;
+    width: 380px;
+    margin: auto;
+    background-color: #f4f0f0;
+    border: 2px solid #E91E63;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#formData>input{
+    font-size: 20px;
+    border-radius: 0.2em;
+    margin-bottom: 10px;
+}

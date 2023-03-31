@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Welcome Admin</h1>
-    <div id="admin-product-container">
+    <div id="filter-sort">
         <select name="" id="filter-by-type">
             <option value="">Filter By Type</option>
             <option value="women">Women</option>
@@ -39,39 +39,50 @@
             <option value="lowToHigh">Low To High</option>
             <option value="HighToLow">High To Low</option>
         </select>
-        <table>
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Brand</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                    <th>Category</th>
-                    <th>Type</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
+    </div>
+    <div id="admin-product-container">
+        <div id="table">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Brand</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Type</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be append here -->
+                </tbody>
+            </table>
+            <div id="admin-pagination-button">
+                <!-- Button will be append here -->
+            </div>
+        </div>
+        <div id="formData-div">
+            <form id="formData">
+                <h2 id="headingOfFormData" style="text-align: center;background-color: #E91E63;color: aliceblue;">Add new product</h2>
+                <label for="image">Image</label><br>
+                <input type="text" id="image" placeholder="image"><br>
+                <label for="brand">Brand</label><br>
+                <input type="text" id="brand" placeholder="Brand"><br>
+                <label for="description">Description</label><br>
+                <input type="text" id="description" placeholder="Description"><br>
+                <label for="price">Price</label><br>
+                <input type="number" id="price" placeholder="Price"><br>
+                <label for="category">Category</label><br>
+                <input type="text" id="category" placeholder="Category"><br>
+                <label for="type">Type</label><br>
+                <input type="text" id="type" placeholder="Type"><br>
+                <input style="display: block;margin: auto;margin-top: 10px;background-color: #E91E63;color: white;padding: 10px 30px;border: none;" id="submit-btn" type="submit">
+            </form>
+        </div>
     </div>
 
 
-    <div id="admin-pagination-button">
-
-    </div>
 </body>
 <script src="./admin.js"></script>
-</html>
-
-<!-- 
-    "image":"https://bit.ly/3uHGEnN",
-    "title":"Anouk",
-    "description":"Women Pink Self Design Kurta with Trousers & Dupatta",
-    "price":"$791",
-    "category":"kurta",
-    "type":"women",
-    "id":"6037ae90ae0" 
--->
