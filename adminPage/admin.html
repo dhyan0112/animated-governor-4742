@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <nav>
+        <h1>Welcome Admin</h1>
+    </nav>
+    <div id="filter-sort">
+        <select name="" id="filter-by-type">
+            <option value="">Filter By Type</option>
+            <option value="women">Women</option>
+            <option value="men">Men</option>
+        </select>
+        <select name="" id="filter-by-category">
+            <option value="">Filter by category</option>
+            <option value="kurta">Kurta</option>
+            <option value="jewellery">Jewellery</option>
+            <option value="lehenga">Lehenga</option>
+            <option value="saree">Saree</option>
+            <option value="palazzos">Palazzos</option>
+            <option value="Casual Shoes">Casual Shoes</option>
+            <option value="Slippers">Slippers</option>
+            <option value="Tshirts">Tshirts</option>
+            <option value="Flip Flops">Flip Flops</option>
+            <option value="Trousers">Trousers</option>
+            <option value="dresses">Dresses</option>
+            <option value="hosiery">Hosiery</option>
+            <option value="jumpsuits">Jumpsuits</option>
+            <option value="lingerie">Lingerie</option>
+            <option value="beachwear">Beachwear</option>
+            <option value="coats">Coats</option>
+        </select>
+        <select name="" id="sort-by-price">
+            <option value="">Sort By Price</option>
+            <option value="lowToHigh">Low To High</option>
+            <option value="HighToLow">High To Low</option>
+        </select>
+    </div>
+    <div id="admin-product-container">
+        <div id="table">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Brand</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Type</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be append here -->
+                </tbody>
+            </table>
+            <div id="admin-pagination-button">
+                <!-- Button will be append here -->
+            </div>
+        </div>
+        <div id="formData-div">
+            <form id="formData">
+                <h2 id="headingOfFormData" style="text-align: center;background-color: #E91E63;color: aliceblue;">Add new product</h2>
+                <label for="image">Image</label><br>
+                <input type="text" id="image" placeholder="image"><br>
+                <label for="brand">Brand</label><br>
+                <input type="text" id="brand" placeholder="Brand"><br>
+                <label for="description">Description</label><br>
+                <input type="text" id="description" placeholder="Description"><br>
+                <label for="price">Price</label><br>
+                <input type="number" id="price" placeholder="Price"><br>
+                <label for="category">Category</label><br>
+                <input type="text" id="category" placeholder="Category"><br>
+                <label for="type">Type</label><br>
+                <input type="text" id="type" placeholder="Type"><br>
+                <input style="display: block;margin: auto;margin-top: 10px;background-color: #E91E63;color: white;padding: 10px 30px;border: none;" id="submit-btn" type="submit">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+<script src="./admin.js"></script>
