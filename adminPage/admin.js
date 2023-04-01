@@ -89,12 +89,7 @@ function createRow(ele,ind){
     
     editColBtn=document.createElement("button");
     editColBtn.innerHTML="Edit"
-    editColBtn.style.backgroundColor="green"
-    editColBtn.style.color="white"
-    editColBtn.style.border="none"
-    editColBtn.style.fontSize="0.8em"
-    editColBtn.style.padding="0.4em 0.8em"
-    editColBtn.style.borderRadius="0.2em"
+    editColBtn.classList.add("editColBtn")
 
     editCol.append(editColBtn);
     editCol.addEventListener("click",()=>{
@@ -104,12 +99,7 @@ function createRow(ele,ind){
 
     deleteColBtn=document.createElement("button");
     deleteColBtn.innerHTML="Delete"
-    deleteColBtn.style.backgroundColor="red"
-    deleteColBtn.style.color="white"
-    deleteColBtn.style.border="none"
-    deleteColBtn.style.fontSize="0.8em"
-    deleteColBtn.style.padding="0.4em 0.8em"
-    deleteColBtn.style.borderRadius="0.2em"
+    deleteColBtn.classList.add("deleteColBtn");
 
     deleteCol.append(deleteColBtn);
     deleteCol.addEventListener('click',()=>{
@@ -151,7 +141,7 @@ function editColData(id){
     document.getElementById("brand").style.display="none"
     document.getElementById("description").style.display="none"
 
-    document.getElementById("headingOfFormData").innerHTML="EditCol the data";
+    document.getElementById("headingOfFormData").innerHTML="Edit the data";
 
     document.getElementById("submit-btn").addEventListener("click",(e)=>{
         e.preventDefault();
