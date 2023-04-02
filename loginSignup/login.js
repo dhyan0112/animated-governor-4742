@@ -13,7 +13,7 @@ function loginDataCheck(){
         userData=data;
         if(check(userData)){
             alert("Login successfull")
-            window.location.href="";
+            window.location.href="../index.html";
         }else if(document.getElementById("login-password").value=="admin" && document.getElementById("login-email").value=="admin@gmail.com"){
             window.location.href="../adminPage/admin.html"
         }
