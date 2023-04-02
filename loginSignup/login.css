@@ -200,7 +200,7 @@ a{
     width: 400px;
     margin: auto;
     background-color: whitesmoke;
-    margin-top: 150px;
+    margin-top: 50px;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -218,7 +218,10 @@ a{
     background-color: plum;
 }
 #login-formdiv>div>h3{
-margin: 10px;text-align: center; color: rgb(66, 57, 136);}
+margin: 10px;text-align: center; 
+color: rgb(66, 57, 136);
+}
+
 #login-password,#login-email{
     width: 328px;
     height: 25px;
@@ -248,5 +251,7 @@ margin: 10px;text-align: center; color: rgb(66, 57, 136);}
 
 }
 #GoToSignup{
+    margin-top: 30px;
+    text-align: center;
     color: blue;
 }
