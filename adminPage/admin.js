@@ -191,6 +191,7 @@ function deleteColData(id){
     })
 }
 
+if(document.getElementById("image").value || document.getElementById("brand").value|| document.getElementById("description").value){
 document.getElementById("submit-btn").addEventListener("click",(e)=>{
     e.preventDefault()
     let image=document.getElementById("image").value;
@@ -225,3 +226,4 @@ document.getElementById("submit-btn").addEventListener("click",(e)=>{
         })
     }
 })
+}
