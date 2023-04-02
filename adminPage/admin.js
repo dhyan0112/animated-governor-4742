@@ -162,7 +162,7 @@ function editColData(id){
             })
             .then(res=>res.json())
             .then((data)=>{
-                alert("Data is editColed successfully");
+                alert("Data is edit successfully");
                 console.log(data);
                 fetchAndRender()
                 document.getElementById("image").style.display="block"
@@ -225,13 +225,3 @@ document.getElementById("submit-btn").addEventListener("click",(e)=>{
         })
     }
 })
-
-// {
-//     "image": "https://bit.ly/3uHGEnN",
-//     "title": "Anouk",
-//     "description": "Women Pink Self Design Kurta with Trousers & Dupatta",
-//     "price": 791,
-//     "category": "kurta",
-//     "type": "women",
-//     "id": "6037ae90ae0"
-//   }
