@@ -213,7 +213,7 @@ function product_cart(elem)
        .then((data)=>{
         // console.log(data);
        }).catch((error)=>{
-        console.log(error)
+        console.log(error)  
        })
 }
 
